@@ -1,0 +1,72 @@
+/* Footer.css – Doraemon Theme */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+:root {
+  --doraemon-blue: #1693d1;
+  --doraemon-white: #ffffff;
+  --doraemon-red: #ff3b30;
+  --doraemon-yellow: #ffd000;
+  --footer-bg: #0e547b;
+  --footer-text: #eaf6fb;
+}
+
+.footerSection {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 3rem 2rem;
+  font-family: 'Baloo 2', cursive;
+  gap: 2rem;
+}
+
+.footerGroup {
+  min-width: 180px;
+}
+
+.footerTitle {
+  color: var(--doraemon-yellow);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.footerTitle::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: var(--doraemon-red);
+  margin-top: 0.3rem;
+  border-radius: 4px;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLink {
+  color: var(--footer-text);
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  margin: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: var(--doraemon-yellow);
+  text-decoration: underline;
+}
+
+.footerCopyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #cfeeff;
+}

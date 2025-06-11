@@ -1,0 +1,129 @@
+:root {
+  --doraemon-blue: #50bfe6;
+  --doraemon-red: #ff4b5c;
+  --doraemon-yellow: #fcd116;
+  --doraemon-dark-blue: #1565c0;
+  --doraemon-border: #2196f3;
+  --doraemon-bg: #ffffff;
+}
+
+.login {
+  background-color: #e0f7ff; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #0d47a1;
+  padding: 2rem;
+  text-align: center; 
+}
+
+.login-form {
+  background-color: #ffffff;
+  border: 3px dashed #2196f3;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 153, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.login-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1565c0;
+  text-shadow: 1px 1px white;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-top: 1rem;
+  align-self: flex-start;
+  font-size: 1rem;
+  color: var(--doraemon-dark-blue);
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #90caf9;
+  border-radius: 15px;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  background-color: #e3f2fd;
+}
+
+.submit-button,
+.google-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  background-color: var(--doraemon-blue);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #0288d1;
+}
+
+.google-button {
+  background-color: var(--doraemon-red);
+}
+
+.google-button:hover {
+  background-color: #d32f2f;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  position: relative;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #555;
+  width: 100%;
+}
+
+.or-divider span {
+  background: #fff;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.or-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  z-index: 0;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border: 2px solid #ef9a9a;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}

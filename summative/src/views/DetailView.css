@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+:root {
+  --doraemon-blue: #1693d1;
+  --doraemon-yellow: #ffd000;
+  --soft-white: #f9f9f9;
+  --light-blue: #d0ecfa;
+  --bold-blue: #0e547b;
+  --gray-dark: #555;
+}
+
+.detail-view {
+  background-color: var(--soft-white);
+  font-family: 'Baloo 2', cursive;
+  padding: 2rem;
+  min-height: 100vh;
+  color: var(--bold-blue);
+}
+
+.movie-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background: var(--light-blue);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.movie-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.movie-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--doraemon-yellow);
+}
+
+.movie-overview {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: var(--gray-dark);
+}
+
+.movie-details {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.movie-poster {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.buy-button {
+  background-color: var(--doraemon-yellow);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #222;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover:enabled {
+  background-color: #ffe156;
+}
+
+.buy-button:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.trailers-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.trailers-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--bold-blue);
+}
+
+.trailers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.trailer-tile {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 240px;
+  transition: transform 0.2s ease;
+}
+
+.trailer-tile:hover {
+  transform: scale(1.03);
+}
+
+.trailer-thumbnail {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}

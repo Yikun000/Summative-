@@ -1,0 +1,49 @@
+/* Genres.css – Doraemon Theme */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+:root {
+  --doraemon-blue: #1693d1;
+  --doraemon-yellow: #ffd000;
+  --doraemon-white: #ffffff;
+  --doraemon-red: #ff3b30;
+  --genre-bg: #e6f6ff;
+}
+
+.genres {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--genre-bg);
+  border-top: 4px solid var(--doraemon-blue);
+}
+
+.genres ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.genres li {
+  display: inline-block;
+}
+
+.genres button {
+  font-family: 'Baloo 2', cursive;
+  background-color: var(--doraemon-yellow);
+  color: var(--doraemon-blue);
+  border: 2px solid var(--doraemon-blue);
+  border-radius: 12px;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.genres button:hover {
+  background-color: var(--doraemon-blue);
+  color: var(--doraemon-white);
+  border-color: var(--doraemon-yellow);
+}

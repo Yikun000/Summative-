@@ -1,0 +1,140 @@
+.search-view {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+  padding: 2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #0d47a1;
+  text-align: center;
+}
+
+.search-view h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1565c0;
+  text-shadow: 1px 1px #fff;
+}
+
+.search-container {
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #90caf9;
+  border-radius: 2rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #42a5f5;
+  background-color: #e1f5fe;
+}
+
+.search-results-title {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  color: #1976d2;
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-result-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 150px;
+  text-align: center;
+}
+
+.search-result-image {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.no-image {
+  width: 100%;
+  height: 225px;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #757575;
+  border-radius: 0.5rem;
+}
+
+.buy-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #42a5f5;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:disabled {
+  background-color: #90caf9;
+  cursor: not-allowed;
+}
+
+.buy-button:hover:not(:disabled) {
+  background-color: #1e88e5;
+}
+
+.loading {
+  font-size: 1.25rem;
+  color: #1976d2;
+}
+
+.no-results {
+  font-size: 1rem;
+  color: #d32f2f;
+}
+
+.search-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.pagination-button {
+  background-color: #29b6f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:disabled {
+  background-color: #b3e5fc;
+  cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #0288d1;
+}
+
+.page-indicator {
+  font-weight: bold;
+  color: #1565c0;
+}

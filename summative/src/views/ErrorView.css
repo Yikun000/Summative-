@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+:root {
+  --doraemon-blue: #1693d1;
+  --doraemon-yellow: #ffd000;
+  --soft-white: #f9f9f9;
+  --gray-dark: #555;
+}
+
+.error {
+  background-color: var(--soft-white);
+  min-height: 100vh;
+  font-family: 'Baloo 2', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--doraemon-blue);
+  padding: 2rem;
+  text-align: center;
+}
+
+.error-container {
+  margin-top: 2rem;
+  background: var(--doraemon-blue);
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+.error-container h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: var(--doraemon-yellow);
+}
+
+.error-container p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.error-container button {
+  background-color: var(--doraemon-yellow);
+  color: #222;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error-container button:hover {
+  background-color: #ffe156;
+}

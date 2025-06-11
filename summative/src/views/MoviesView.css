@@ -1,0 +1,20 @@
+.movies {
+  background-color: #e3f2fd; /* Light Doraemon blue */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #0d47a1;
+}
+
+.genre-movies {
+  flex-grow: 1;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  background: linear-gradient(to bottom right, #bbdefb, #e3f2fd);
+  border-top: 3px dashed #64b5f6;
+  border-bottom: 3px dashed #64b5f6;
+}

@@ -1,0 +1,15 @@
+.home {
+  background-color: #e0f7ff; /* Light Doraemon blue */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #0d47a1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Optional: smoother section transitions */
+.home > * {
+  width: 100%;
+  transition: all 0.3s ease;
+}

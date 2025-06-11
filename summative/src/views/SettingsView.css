@@ -1,0 +1,361 @@
+:root {
+  --doraemon-blue: #009fe3;
+  --doraemon-light-blue: #00bfff;
+  --doraemon-white: #f0f8ff;
+  --doraemon-red: #e03c31;
+  --doraemon-yellow: #ffde59;
+  --doraemon-gray: #607d8b;
+  --font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.settings {
+  min-height: 100vh;
+  background: var(--doraemon-white);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  color: var(--doraemon-blue);
+  padding-bottom: 2rem;
+}
+
+.settings-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 159, 227, 0.25);
+  padding: 2rem 3rem;
+  border: 6px solid var(--doraemon-blue);
+  position: relative;
+}
+
+.settings-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-title {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: var(--doraemon-blue);
+  text-align: center;
+  text-shadow: 2px 2px var(--doraemon-light-blue);
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.error-message, .success-message {
+  padding: 1rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.error-message {
+  background-color: #ffd3d1;
+  color: var(--doraemon-red);
+  border: 2px solid var(--doraemon-red);
+}
+
+.success-message {
+  background-color: #e9f8d1;
+  color: #689f38;
+  border: 2px solid #689f38;
+}
+
+.user-info-section {
+  margin-bottom: 1rem;
+}
+
+.auth-type-notice {
+  font-size: 1rem;
+  color: var(--doraemon-gray);
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-label {
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: var(--doraemon-blue);
+  text-shadow: 1px 1px var(--doraemon-light-blue);
+  font-size: 1.1rem;
+}
+
+.form-input {
+  width: 100%;
+  max-width: 420px;
+  padding: 0.65rem 1.2rem;
+  border-radius: 20px;
+  border: 2.5px solid var(--doraemon-light-blue);
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: var(--font-family);
+  color: var(--doraemon-blue);
+  background: #e6f7ff;
+  box-shadow: inset 2px 2px 8px #c7e9ff;
+}
+
+.form-input:focus {
+  border-color: var(--doraemon-blue);
+  outline: none;
+  box-shadow: 0 0 10px var(--doraemon-blue);
+  background: #d0eaff;
+}
+
+.form-input.read-only {
+  background-color: #f0f8ff;
+  cursor: not-allowed;
+  color: var(--doraemon-gray);
+  box-shadow: none;
+}
+
+.input-note {
+  font-size: 0.9rem;
+  color: var(--doraemon-red);
+  margin-top: 0.3rem;
+  font-weight: 600;
+}
+
+.password-button {
+  background: var(--doraemon-red);
+  color: white;
+  padding: 0.65rem 1.6rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: max-content;
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  font-family: var(--font-family);
+  box-shadow: 0 4px 8px rgba(224, 60, 49, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.password-button:hover:not(:disabled) {
+  background: #b8322c;
+}
+
+.password-form {
+  background: var(--doraemon-white);
+  border-radius: 24px;
+  padding: 1.5rem 2rem;
+  margin-top: 1rem;
+  max-width: 460px;
+  border: 4px solid var(--doraemon-light-blue);
+  box-shadow: 0 8px 20px rgba(0, 159, 227, 0.3);
+}
+
+.password-form-group {
+  margin-bottom: 1.25rem;
+}
+
+.password-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.save-button {
+  background-color: var(--doraemon-blue);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 0.75rem 2rem;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: var(--font-family);
+  box-shadow: 0 6px 15px rgba(0, 159, 227, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover:not(:disabled) {
+  background-color: var(--doraemon-light-blue);
+}
+
+.cancel-button {
+  background-color: var(--doraemon-yellow);
+  color: var(--doraemon-blue);
+  border: none;
+  border-radius: 40px;
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font-family);
+  box-shadow: 0 6px 15px rgba(255, 222, 89, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover:not(:disabled) {
+  background-color: #ffec9c;
+}
+
+.genre-selection {
+  margin-top: 3rem;
+  max-width: 460px;
+}
+
+.genre-selection h2 {
+  color: var(--doraemon-blue);
+  margin-bottom: 1rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px var(--doraemon-light-blue);
+}
+
+.genre-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.genre-checkboxes div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.genre-checkboxes input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--doraemon-blue);
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px #7ec8f9;
+}
+
+.genre-checkboxes label {
+  font-size: 1.1rem;
+  color: var(--doraemon-blue);
+  cursor: pointer;
+  font-weight: 700;
+  user-select: none;
+}
+
+.settings-buttons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.back-button {
+  background-color: var(--doraemon-light-blue);
+  color: var(--doraemon-blue);
+  border: none;
+  border-radius: 40px;
+  padding: 0.75rem 2.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font-family);
+  box-shadow: 0 6px 15px rgba(0, 191, 255, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover:not(:disabled) {
+  background-color: var(--doraemon-blue);
+  color: white;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--doraemon-blue);
+  font-weight: 800;
+  font-family: var(--font-family);
+  text-shadow: 1px 1px var(--doraemon-light-blue);
+}
+
+.loading-message {
+  margin-top: 1rem;
+}
+
+.purchase-history-container {
+  background-color: var(--doraemon-white);
+  padding: 2rem 0 3rem;
+  margin-top: 3rem;
+  border-top: 6px solid var(--doraemon-blue);
+}
+
+.purchase-history-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.purchase-history-content h2 {
+  text-align: center;
+  color: var(--doraemon-red);
+  margin-bottom: 2rem;
+  font-weight: 900;
+  font-family: var(--font-family);
+  font-size: 2rem;
+  text-shadow: 1.5px 1.5px var(--doraemon-yellow);
+}
+
+.purchase-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  justify-content: center;
+}
+
+.purchase-item {
+  background: var(--doraemon-white);
+  border-radius: 18px;
+  padding: 0.8rem;
+  width: 160px;
+  box-shadow: 0 6px 15px rgba(0, 159, 227, 0.2);
+  text-align: center;
+  transition: transform 0.25s ease;
+  cursor: pointer;
+}
+
+.purchase-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(224, 60, 49, 0.4);
+}
+
+.purchase-item-image {
+  border-radius: 14px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.7rem;
+  border: 4px solid var(--doraemon-light-blue);
+  box-shadow: inset 1px 1px 5px #90caf9;
+}
+
+.purchase-item-title {
+  font-size: 1.1rem;
+  color: var(--doraemon-blue);
+  font-weight: 900;
+  font-family: var(--font-family);
+}
+
+.no-purchases {
+  text-align: center;
+  font-style: italic;
+  color: var(--doraemon-gray);
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}

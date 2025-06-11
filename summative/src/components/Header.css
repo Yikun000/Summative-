@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+:root {
+  --doraemon-blue: #1693d1;
+  --doraemon-blue-dark: #0e547b;
+  --doraemon-yellow: #ffd000;
+  --doraemon-white: #ffffff;
+  --header-shadow: rgba(0, 0, 0, 0.15);
+}
+
+
+.header {
+  width: 100%;
+  background: linear-gradient(90deg, var(--doraemon-blue) 0%, var(--doraemon-blue-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 4px 8px var(--header-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title h1 {
+  font-family: 'Baloo 2', cursive;
+  color: var(--doraemon-yellow);
+  font-size: 1.8rem;
+  margin: 0;
+  text-shadow: 2px 2px 0 var(--doraemon-blue-dark);
+}
+
+.logo-image {
+  height: 42px;
+  width: auto;
+}
+
+
+.welcome-container {
+  flex: 1;
+  text-align: center;
+}
+
+.welcome-message {
+  font-family: 'Baloo 2', cursive;
+  color: var(--doraemon-white);
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+
+.header-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header-buttons button {
+  font-family: 'Baloo 2', cursive;
+  background: transparent;
+  color: var(--doraemon-white);
+  border: 2px solid var(--doraemon-yellow);
+  border-radius: 10px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.header-buttons button:hover {
+  background: var(--doraemon-yellow);
+  color: var(--doraemon-blue-dark);
+}
+
+
+@media (max-width: 600px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .welcome-container {
+    order: 3;
+    width: 100%;
+  }
+  .header-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

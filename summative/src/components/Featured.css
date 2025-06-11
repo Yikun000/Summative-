@@ -1,0 +1,59 @@
+:root {
+  --doraemon-blue: #50bfe6;
+  --doraemon-white: #ffffff;
+  --doraemon-yellow: #fcd116;
+  --doraemon-red: #ff4b5c;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --font: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+.featured {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, var(--doraemon-blue), #a0e7ff);
+  min-height: 100vh;
+  font-family: var(--font);
+  text-align: center;
+}
+
+.featured-header {
+  font-size: 3rem;
+  color: var(--doraemon-white);
+  text-shadow: 2px 2px var(--doraemon-red);
+  margin-bottom: 30px;
+}
+
+.featured-movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.movie-card {
+  background-color: var(--doraemon-white);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px var(--card-shadow);
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border: 4px solid var(--doraemon-yellow);
+}
+
+.movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--doraemon-red);
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--doraemon-blue);
+  padding: 10px;
+}

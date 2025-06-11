@@ -1,0 +1,100 @@
+.register {
+  background: linear-gradient(to right, #bbdefb, #e3f2fd);
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #0d47a1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1976d2;
+  text-shadow: 1px 1px white;
+}
+
+.register-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #90caf9;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.genre-selection {
+  margin-top: 2rem;
+}
+
+.genre-selection h2 {
+  margin-bottom: 1rem;
+  color: #1565c0;
+  text-align: center;
+}
+
+.genre-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.genre-checkboxes div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submit-button,
+.google-button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2196f3;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover,
+.google-button:hover {
+  background-color: #1976d2;
+}
+
+.or-divider {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+}
+
+.error-message {
+  color: red;
+  background: #ffebee;
+  padding: 1rem;
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
