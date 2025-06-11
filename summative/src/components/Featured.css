@@ -1,59 +1,63 @@
-:root {
-  --doraemon-blue: #50bfe6;
-  --doraemon-white: #ffffff;
-  --doraemon-yellow: #fcd116;
-  --doraemon-red: #ff4b5c;
-  --card-shadow: rgba(0, 0, 0, 0.1);
-  --font: 'Poppins', 'Segoe UI', sans-serif;
-}
+/* Featured.css */
 
 .featured {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #E0F7FA, #B2EBF2); /* Doraemon blue */
   padding: 40px 20px;
-  background: linear-gradient(to bottom, var(--doraemon-blue), #a0e7ff);
   min-height: 100vh;
-  font-family: var(--font);
   text-align: center;
 }
 
 .featured-header {
-  font-size: 3rem;
-  color: var(--doraemon-white);
-  text-shadow: 2px 2px var(--doraemon-red);
+  color: #1976d2;
+  font-size: 2.5rem;
   margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #90caf9;
 }
 
 .featured-movies {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .movie-card {
-  background-color: var(--doraemon-white);
-  border-radius: 20px;
-  box-shadow: 0 8px 16px var(--card-shadow);
-  width: 200px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+  border: 3px solid #1976d2;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: 180px;
   overflow: hidden;
-  border: 4px solid var(--doraemon-yellow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .movie-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .movie-poster {
   width: 100%;
-  height: 300px;
+  height: 270px;
   object-fit: cover;
-  border-bottom: 3px solid var(--doraemon-red);
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
 }
 
 .movie-title {
-  font-size: 0.5rem; 
+  font-size: 1.5rem !important; 
+  color: #1976d2;
   font-weight: bold;
-  color: var(--doraemon-blue);
-  padding: 10px;
+  padding: 14px 10px 14px 10px;
+  text-align: center;
+  min-height: 3.2em;
+  line-height: 1.2em;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
+  word-break: break-word;
 }
