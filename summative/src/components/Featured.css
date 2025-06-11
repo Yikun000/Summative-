@@ -52,7 +52,7 @@
 }
 
 .movie-title {
-  font-size: 1.2rem;
+  font-size: 0.5rem; 
   font-weight: bold;
   color: var(--doraemon-blue);
   padding: 10px;

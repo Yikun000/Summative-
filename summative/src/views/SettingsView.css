@@ -99,11 +99,11 @@
 
 .form-input {
   width: 100%;
-  max-width: 420px;
-  padding: 0.65rem 1.2rem;
+  max-width: 360px; 
+  padding: 0.5rem 1rem; 
   border-radius: 20px;
   border: 2.5px solid var(--doraemon-light-blue);
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   font-family: var(--font-family);
   color: var(--doraemon-blue);
